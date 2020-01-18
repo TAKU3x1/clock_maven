@@ -125,7 +125,7 @@ public class ClockViewer extends JComponent{
         // 長針の位置は，分の位置で表そうとすると，時間×5．
         // 24時間制のため，12で割った余りを時間とする．
         g2.setStroke(new BasicStroke(4));
-        g2.setColor(Color.BLUE);
+        g2.setColor(Color.decode(args.getShortHandColor()));
         drawHand(g2, hourPosition, length * 0.6);
     }
 
